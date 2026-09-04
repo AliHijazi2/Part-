@@ -10,7 +10,6 @@ CSS-Klasse `placeholder` markiert.
 | --- | --- |
 | `index.html` | Startseite: Slogan, Kernthemen, Kennzahlen, Meldungen, Aufruf |
 | `programm.html` | Parteiprogramm mit Themenübersicht (aufklappbare Abschnitte) |
-| `partei.html` | Über uns: Selbstverständnis, Vorstand, Struktur, Dokumente |
 | `mitmachen.html` | Mitglied werden, aktiv werden (mit Formular) |
 | `kontakt.html` | Geschäftsstelle, Kontaktformular, Presse |
 | `impressum.html` | Impressum (Pflichtangaben ergänzen) |
