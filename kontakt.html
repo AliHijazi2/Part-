@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt | GBD – Gerechtigkeitsbündnis Deutschlands</title>
+<meta name="description" content="Kontakt zur Bundesgeschäftsstelle und Presseanfragen.">
+<link rel="icon" href="assets/img/gbd-logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="kontakt">
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/gbd-logo.png" alt="Logo des Gerechtigkeitsbündnisses Deutschlands">
+      <span class="brand__text">
+        <span class="brand__name">GBD</span>
+        <span class="brand__claim">Gerechtigkeitsbündnis Deutschlands</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menü</button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+          <li><a href="programm.html" data-nav="programm">Programm</a></li>
+          <li><a href="partei.html" data-nav="partei">Partei</a></li>
+          <li><a href="aktuelles.html" data-nav="aktuelles">Aktuelles</a></li>
+          <li><a href="kontakt.html" data-nav="kontakt">Kontakt</a></li>
+          <li class="nav-cta"><a href="mitmachen.html" data-nav="mitmachen">Mitmachen</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+<section class="page-head">
+  <div class="container">
+    <h1>Kontakt</h1>
+    <p><span class="placeholder">Einleitungssatz zum Kontakt – Text folgt.</span></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content-layout">
+    <aside class="toc">
+      <h2>Direkt</h2>
+      <ul>
+        <li><a href="#geschaeftsstelle">Geschäftsstelle</a></li>
+        <li><a href="#formular">Kontaktformular</a></li>
+        <li><a href="#presse">Presse</a></li>
+      </ul>
+    </aside>
+    <div>
+      <div class="prose">
+        <h2 id="geschaeftsstelle">Bundesgeschäftsstelle</h2>
+        <ul>
+          <li class="placeholder">Anschrift: folgt</li>
+          <li class="placeholder">E-Mail: folgt</li>
+          <li class="placeholder">Telefon: folgt</li>
+        </ul>
+      </div>
+
+      <h2 id="formular" style="margin-top:2em">Kontaktformular</h2>
+      <form class="form" data-demo>
+        <div class="form__row">
+          <div class="field">
+            <label for="k-name">Name</label>
+            <input id="k-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="k-mail">E-Mail</label>
+            <input id="k-mail" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="k-thema">Anliegen</label>
+          <select id="k-thema" name="thema">
+            <option>Allgemeine Anfrage</option>
+            <option>Mitgliedschaft</option>
+            <option>Presse</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="k-text">Nachricht</label>
+          <textarea id="k-text" name="nachricht" rows="6" required></textarea>
+        </div>
+        <div class="field field--check">
+          <input id="k-ok" name="datenschutz" type="checkbox" required>
+          <label for="k-ok" class="placeholder">Platzhalter für den Datenschutzhinweis.</label>
+        </div>
+        <div>
+          <button class="btn btn--primary" type="submit">Nachricht senden</button>
+        </div>
+        <p class="form__note placeholder">Hinweis: Das Formular ist noch nicht mit einem Empfänger verbunden.</p>
+        <p class="form-status" role="status" tabindex="-1" hidden>Danke! Sobald ein Empfänger hinterlegt ist, wird die Nachricht übermittelt.</p>
+      </form>
+
+      <div class="prose" style="margin-top:2.5em">
+        <h2 id="presse">Presse</h2>
+        <p class="placeholder">Ansprechpartner und Kontaktdaten für Medienanfragen – folgt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid grid--4">
+      <div>
+        <h3>GBD</h3>
+        <p>Gerechtigkeitsbündnis Deutschlands</p>
+        <p class="placeholder">Kurzbeschreibung der Partei – Text folgt.</p>
+      </div>
+      <div>
+        <h3>Partei</h3>
+        <ul>
+          <li><a href="partei.html">Über uns</a></li>
+          <li><a href="programm.html">Programm</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="mitmachen.html">Mitglied werden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service</h3>
+        <ul>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html#presse">Presse</a></li>
+          <li><a href="mitmachen.html#spenden">Spenden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Gerechtigkeitsbündnis Deutschlands (GBD)</span>
+      <span class="placeholder">Platzhalter: Social-Media-Links</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

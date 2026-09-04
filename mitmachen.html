@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mitmachen | GBD – Gerechtigkeitsbündnis Deutschlands</title>
+<meta name="description" content="Mitglied werden, unterstützen oder spenden.">
+<link rel="icon" href="assets/img/gbd-logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="mitmachen">
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/gbd-logo.png" alt="Logo des Gerechtigkeitsbündnisses Deutschlands">
+      <span class="brand__text">
+        <span class="brand__name">GBD</span>
+        <span class="brand__claim">Gerechtigkeitsbündnis Deutschlands</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menü</button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+          <li><a href="programm.html" data-nav="programm">Programm</a></li>
+          <li><a href="partei.html" data-nav="partei">Partei</a></li>
+          <li><a href="aktuelles.html" data-nav="aktuelles">Aktuelles</a></li>
+          <li><a href="kontakt.html" data-nav="kontakt">Kontakt</a></li>
+          <li class="nav-cta"><a href="mitmachen.html" data-nav="mitmachen">Mitmachen</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+<section class="page-head">
+  <div class="container">
+    <h1>Mitmachen</h1>
+    <p><span class="placeholder">Einleitungssatz: Wie man die GBD unterstützen kann – Text folgt.</span></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--3">
+      <div class="card">
+        <span class="card__num">01</span>
+        <h3>Mitglied werden</h3>
+        <p class="placeholder">Kurze Beschreibung – Text folgt.</p>
+        <a class="card__link" href="#mitgliedsantrag">Zum Antrag &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="card__num">02</span>
+        <h3>Aktiv werden</h3>
+        <p class="placeholder">Kurze Beschreibung – Text folgt.</p>
+        <a class="card__link" href="kontakt.html">Kontakt aufnehmen &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="card__num">03</span>
+        <h3>Spenden</h3>
+        <p class="placeholder">Kurze Beschreibung – Text folgt.</p>
+        <a class="card__link" href="#spenden">Mehr erfahren &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <span class="eyebrow">Formular</span>
+    <h2 id="mitgliedsantrag">Mitgliedsantrag</h2>
+    <p class="lead placeholder">Hinweistext zum Antrag – Text folgt.</p>
+
+    <form class="form" data-demo style="margin-top:28px">
+      <div class="form__row">
+        <div class="field">
+          <label for="m-vorname">Vorname</label>
+          <input id="m-vorname" name="vorname" type="text" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="m-nachname">Nachname</label>
+          <input id="m-nachname" name="nachname" type="text" autocomplete="family-name" required>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="field">
+          <label for="m-mail">E-Mail</label>
+          <input id="m-mail" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="m-tel">Telefon (optional)</label>
+          <input id="m-tel" name="telefon" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="field">
+          <label for="m-plz">PLZ</label>
+          <input id="m-plz" name="plz" type="text" inputmode="numeric" autocomplete="postal-code" required>
+        </div>
+        <div class="field">
+          <label for="m-ort">Ort</label>
+          <input id="m-ort" name="ort" type="text" autocomplete="address-level2" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="m-nachricht">Nachricht (optional)</label>
+        <textarea id="m-nachricht" name="nachricht" rows="4"></textarea>
+      </div>
+      <div class="field field--check">
+        <input id="m-ok" name="einverstaendnis" type="checkbox" required>
+        <label for="m-ok" class="placeholder">Platzhalter für die Einverständniserklärung (Satzung, Datenschutz).</label>
+      </div>
+      <div>
+        <button class="btn btn--primary" type="submit">Antrag absenden</button>
+      </div>
+      <p class="form__note placeholder">Hinweis: Das Formular ist noch nicht mit einem Empfänger verbunden.</p>
+      <p class="form-status" role="status" tabindex="-1" hidden>Danke! Sobald ein Empfänger hinterlegt ist, wird der Antrag übermittelt.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <span class="eyebrow">Unterstützung</span>
+    <h2 id="spenden">Spenden</h2>
+    <p class="placeholder">Erläuterung zu Spenden und Transparenz – Text folgt.</p>
+    <h3>Bankverbindung</h3>
+    <ul>
+      <li class="placeholder">Kontoinhaber: folgt</li>
+      <li class="placeholder">IBAN: folgt</li>
+      <li class="placeholder">BIC: folgt</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid grid--4">
+      <div>
+        <h3>GBD</h3>
+        <p>Gerechtigkeitsbündnis Deutschlands</p>
+        <p class="placeholder">Kurzbeschreibung der Partei – Text folgt.</p>
+      </div>
+      <div>
+        <h3>Partei</h3>
+        <ul>
+          <li><a href="partei.html">Über uns</a></li>
+          <li><a href="programm.html">Programm</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="mitmachen.html">Mitglied werden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service</h3>
+        <ul>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html#presse">Presse</a></li>
+          <li><a href="mitmachen.html#spenden">Spenden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Gerechtigkeitsbündnis Deutschlands (GBD)</span>
+      <span class="placeholder">Platzhalter: Social-Media-Links</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
