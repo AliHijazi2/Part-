@@ -126,7 +126,6 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
   z-index: 50;
   background: var(--navy);
   color: var(--white);
-  border-bottom: 3px solid var(--red);
 }
 .site-header .container {
   display: flex;
@@ -191,7 +190,7 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
     left: 0;
     right: 0;
     background: var(--navy-dark);
-    border-bottom: 3px solid var(--red);
+    border-bottom: 1px solid rgba(255, 255, 255, .22);
     padding: 12px var(--gutter) 20px;
   }
   .main-nav.is-open { display: block; }
