@@ -70,12 +70,9 @@ p  { margin: 0 0 1em; }
 /* Hilfsklassen ----------------------------------------------------------- */
 .section { padding: 72px 0; }
 .section--tight { padding: 48px 0; }
-.section--dark { background: var(--graphite); color: var(--white); }
-.section--dark a { color: var(--white); }
 .section--paper { background: var(--paper); }
 .text-center { text-align: center; }
 .lead { font-size: 1.15rem; color: var(--grey-600); max-width: 62ch; }
-.section--dark .lead { color: var(--grey-300); }
 .mx-auto { margin-inline: auto; }
 .placeholder { color: var(--grey-600); font-style: italic; }
 .visually-hidden {
@@ -92,7 +89,6 @@ p  { margin: 0 0 1em; }
   color: var(--orange-dark);
   margin-bottom: .75rem;
 }
-.section--dark .eyebrow { color: var(--orange); }
 
 /* Buttons ---------------------------------------------------------------- */
 .btn {
@@ -260,11 +256,6 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
 
 .card--link:hover { border-color: var(--orange); }
 
-/* Kennzahlen ------------------------------------------------------------- */
-.stat { text-align: center; }
-.stat__value { font-size: 2.6rem; font-weight: 800; color: var(--orange); line-height: 1; }
-.stat__label { color: var(--grey-300); font-size: .95rem; margin-top: 8px; }
-
 /* Beitrags-/Terminliste -------------------------------------------------- */
 .list { list-style: none; margin: 0; padding: 0; }
 .list > li {
@@ -302,7 +293,7 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
   padding: 60px 0;
 }
 .page-head p { color: var(--grey-300); max-width: 62ch; margin-bottom: 0; }
-.page-head .placeholder, .section--dark .placeholder { color: var(--grey-300); }
+.page-head .placeholder { color: var(--grey-300); }
 
 .prose { max-width: 72ch; }
 .prose h2 { margin-top: 1.8em; }
