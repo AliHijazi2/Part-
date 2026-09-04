@@ -55,3 +55,17 @@ Einmalig im Repo unter **Settings → Pages** einstellen:
 Nach ein bis zwei Minuten ist die Seite erreichbar unter
 <https://alihijazi2.github.io/Part-/>. Jeder weitere Push auf den Branch
 aktualisiert die Seite automatisch.
+
+## Zwischenspeicher (Cache) beim Aktualisieren
+
+GitHub Pages lässt Browser Dateien rund zehn Minuten zwischenspeichern.
+Nach einem Push kann daher kurzzeitig noch die alte Fassung erscheinen.
+
+* `style.css` und `main.js` werden über einen Versionsstempel eingebunden
+  (`?v=...`). **Nach Änderungen an diesen beiden Dateien den Stempel in allen
+  HTML-Dateien erhöhen**, damit niemand eine alte Fassung angezeigt bekommt.
+* Für die HTML-Seiten selbst lässt sich das auf GitHub Pages nicht steuern.
+  Dort hilft nur neu laden oder kurz warten.
+* Eine über „Zum Home-Bildschirm" abgelegte Fassung hält einen eigenen
+  Zwischenspeicher. Zum Erzwingen: Symbol löschen, Seite im Browser neu laden,
+  danach erneut ablegen.
