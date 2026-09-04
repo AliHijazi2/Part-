@@ -33,6 +33,44 @@
     });
   });
 
+  /* Programm: alle Abschnitte auf- oder zuklappen */
+  var topics = document.querySelectorAll(".topic");
+
+  document.querySelectorAll("[data-topics]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var open = button.dataset.topics === "open";
+      topics.forEach(function (topic) { topic.open = open; });
+    });
+  });
+
+  /* Wird ein Abschnitt direkt verlinkt (z. B. programm.html#abschnitt-9),
+     soll er geöffnet und angesteuert werden. */
+  function oeffneAusAdresse() {
+    if (!window.location.hash) return;
+    var ziel = document.querySelector(window.location.hash);
+    if (ziel && ziel.classList.contains("topic")) {
+      ziel.open = true;
+      ziel.scrollIntoView({ block: "start" });
+    }
+  }
+  oeffneAusAdresse();
+  window.addEventListener("hashchange", oeffneAusAdresse);
+
+  /* Beim Drucken alles aufklappen, danach den alten Stand wiederherstellen. */
+  if (topics.length) {
+    var vorherOffen = [];
+    window.addEventListener("beforeprint", function () {
+      vorherOffen = [];
+      topics.forEach(function (topic) {
+        vorherOffen.push(topic.open);
+        topic.open = true;
+      });
+    });
+    window.addEventListener("afterprint", function () {
+      topics.forEach(function (topic, i) { topic.open = vorherOffen[i]; });
+    });
+  }
+
   /* Jahreszahl im Fußbereich */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
