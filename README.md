@@ -21,7 +21,7 @@ CSS-Klasse `placeholder` markiert.
 
 ```
 assets/
-  css/style.css   Gestaltung, Markenfarben ganz oben als CSS-Variablen
+  css/style.css   Gestaltung, Markenfarben ganz oben als CSS-Variablen (--orange, --graphite)
   js/main.js      Mobilmenü, aktiver Menüpunkt, Formular-Rückmeldung
   img/gbd-logo.png
 ```
@@ -35,7 +35,7 @@ python3 -m http.server 8000
 
 ## Anpassen
 
-* **Farben** – in `assets/css/style.css` unter `:root` (`--navy`, `--red`).
+* **Farben** – in `assets/css/style.css` unter `:root` (`--orange`, `--graphite`).
 * **Navigation** – der Kopfbereich steht in jeder HTML-Datei; Änderungen in allen Dateien nachziehen.
 * **Texte** – alle Stellen mit `class="placeholder"` ersetzen und die Klasse entfernen.
 

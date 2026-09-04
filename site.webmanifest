@@ -6,9 +6,13 @@
   "scope": "./",
   "display": "standalone",
   "lang": "de",
-  "background_color": "#0b1170",
-  "theme_color": "#0b1170",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6200",
   "icons": [
-    { "src": "assets/img/gbd-logo.png", "sizes": "any", "type": "image/png" }
+    {
+      "src": "assets/img/gbd-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
   ]
 }
