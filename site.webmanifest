@@ -10,9 +10,20 @@
   "theme_color": "#ff6200",
   "icons": [
     {
-      "src": "assets/img/gbd-logo.png",
-      "sizes": "any",
+      "src": "assets/img/gbd-icon-180.png",
+      "sizes": "180x180",
       "type": "image/png"
+    },
+    {
+      "src": "assets/img/gbd-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/gbd-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
