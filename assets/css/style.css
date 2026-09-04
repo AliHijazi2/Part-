@@ -415,6 +415,7 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
 }
 
 .section--topics { padding-top: 44px; }
+section[id] { scroll-margin-top: 92px; }
 .topics { border-top: 1px solid var(--grey-300); }
 
 .topic {

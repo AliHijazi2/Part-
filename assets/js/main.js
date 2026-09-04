@@ -6,10 +6,22 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("main-nav");
 
+  function menueSchliessen() {
+    if (!nav) return;
+    nav.classList.remove("is-open");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+  }
+
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(open));
+    });
+
+    /* Führt ein Menüpunkt auf dieselbe Seite, lädt nichts neu –
+       das Menü muss sich dann selbst schließen. */
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", menueSchliessen);
     });
   }
 
