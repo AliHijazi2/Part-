@@ -134,12 +134,14 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
   gap: 20px;
   min-height: 74px;
 }
-.brand { display: flex; align-items: center; gap: 12px; color: var(--white); }
+.brand { display: flex; align-items: center; }
 .brand:hover { text-decoration: none; }
-.brand img { height: 40px; width: auto; border-radius: 4px; }
-.brand__text { display: flex; flex-direction: column; }
-.brand__name { font-weight: 800; font-size: 1.15rem; letter-spacing: .02em; }
-.brand__claim { font-size: .72rem; color: var(--grey-300); letter-spacing: .04em; }
+.brand img {
+  height: 30px;
+  width: auto;
+  /* Die Wortmarke ist freigestellt und sitzt direkt auf dem Blau der Leiste. */
+}
+@media (max-width: 480px) { .brand img { height: 26px; } }
 
 .nav-toggle {
   margin-left: auto;
@@ -182,7 +184,6 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
 
 @media (max-width: 940px) {
   .nav-toggle { display: block; }
-  .brand__claim { display: none; }
   .main-nav {
     display: none;
     position: absolute;
@@ -214,16 +215,13 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
 .hero h1 { margin-bottom: .35em; }
 .hero h1 span { color: var(--red); }
 .hero__lead { font-size: 1.2rem; color: var(--grey-300); max-width: 52ch; }
-.hero__figure {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, .18);
-}
-.hero__figure img { width: 100%; }
+.hero__figure { padding: 0 8px; }
+.hero__figure img { width: 100%; max-width: 420px; margin-inline: auto; }
 @media (max-width: 860px) {
   .hero { padding: 56px 0 64px; }
   .hero__grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero__figure { padding: 0; }
+  .hero__figure img { max-width: 240px; margin-inline: 0; }
 }
 
 /* Karten / Raster -------------------------------------------------------- */
