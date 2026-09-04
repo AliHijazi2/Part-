@@ -1,0 +1,14 @@
+{
+  "name": "GBD – Gerechtigkeitsbündnis Deutschlands",
+  "short_name": "GBD",
+  "description": "Offizielle Website des Gerechtigkeitsbündnisses Deutschlands.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "de",
+  "background_color": "#0b1170",
+  "theme_color": "#0b1170",
+  "icons": [
+    { "src": "assets/img/gbd-logo.png", "sizes": "any", "type": "image/png" }
+  ]
+}

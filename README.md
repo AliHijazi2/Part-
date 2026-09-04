@@ -44,3 +44,14 @@ python3 -m http.server 8000
 Die Formulare auf `mitmachen.html` und `kontakt.html` sind noch **ohne Empfänger**:
 Beim Absenden erscheint nur eine Bestätigung, es werden keine Daten verschickt.
 Für den Echtbetrieb muss ein Formular-Dienst oder ein eigenes Backend angebunden werden.
+
+## Veröffentlichen (GitHub Pages)
+
+Einmalig im Repo unter **Settings → Pages** einstellen:
+
+* Source: *Deploy from a branch*
+* Branch: `claude/gbd-website-skeleton-bl3yxh`, Ordner `/ (root)`
+
+Nach ein bis zwei Minuten ist die Seite erreichbar unter
+<https://alihijazi2.github.io/Part-/>. Jeder weitere Push auf den Branch
+aktualisiert die Seite automatisch.
