@@ -14,6 +14,7 @@ CSS-Klasse `placeholder` markiert.
 | `kontakt.html` | Geschäftsstelle, Kontaktformular, Presse |
 | `impressum.html` | Impressum (Pflichtangaben ergänzen) |
 | `datenschutz.html` | Datenschutzerklärung (Inhalt ergänzen) |
+| `404.html` | Fehlerseite für nicht vorhandene Adressen |
 
 ## Aufbau
 
