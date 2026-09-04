@@ -33,15 +33,7 @@
     });
   });
 
-  /* Programm: alle Abschnitte auf- oder zuklappen */
   var topics = document.querySelectorAll(".topic");
-
-  document.querySelectorAll("[data-topics]").forEach(function (button) {
-    button.addEventListener("click", function () {
-      var open = button.dataset.topics === "open";
-      topics.forEach(function (topic) { topic.open = open; });
-    });
-  });
 
   /* Wird ein Abschnitt direkt verlinkt (z. B. programm.html#abschnitt-9),
      soll er geöffnet und angesteuert werden. */
