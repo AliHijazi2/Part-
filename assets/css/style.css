@@ -324,16 +324,22 @@ body > main .btn--ghost:hover { background: rgba(11, 17, 112, .07); }
   background: var(--orange);
   color: var(--ink);
   border-radius: var(--radius);
-  padding: 42px;
+  padding: 48px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
 }
-.cta h2 { margin-bottom: .2em; }
-.cta p { margin-bottom: 0; }
+.cta__text { max-width: 58ch; }
+.cta h2 { margin-bottom: .55em; }
+.cta p { margin-bottom: 1em; }
+.cta p:last-child { margin-bottom: 0; }
+.cta__betonung { font-weight: 700; }
 .cta .placeholder { color: rgba(20, 22, 26, .7); }
+
+@media (max-width: 620px) {
+  .cta { padding: 30px 24px; gap: 24px; }
+}
 .cta .btn { background: var(--ink); color: var(--white); }
 .cta .btn:hover { background: var(--white); color: var(--ink); }
 
